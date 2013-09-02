@@ -1,0 +1,143 @@
+[2013-09-01 07:15:39] requirements_centos_libs_install
+requirements_centos_libs_install () 
+{ 
+    __rvm_try_sudo yum install -y "$@" || return $?
+}
+current path: /home/ec2-user/.rvm/src/rvm
+command(11): requirements_centos_libs_install patch gcc-c++ patch libyaml-devel libffi-devel openssl-devel autoconf automake libtool bison
+Loaded plugins: priorities, security, update-motd, upgrade-helper
+Setting up Install Process
+Resolving Dependencies
+--> Running transaction check
+---> Package autoconf.noarch 0:2.63-5.1.7.amzn1 will be installed
+--> Processing Dependency: m4 >= 1.4.7 for package: autoconf-2.63-5.1.7.amzn1.noarch
+---> Package automake.noarch 0:1.11.1-4.12.amzn1 will be installed
+---> Package bison.x86_64 0:2.4.1-5.7.amzn1 will be installed
+---> Package gcc-c++.noarch 0:4.6.3-3.10.amzn1 will be installed
+--> Processing Dependency: gcc46-c++ = 4.6.3 for package: gcc-c++-4.6.3-3.10.amzn1.noarch
+--> Processing Dependency: libstdc++46 = 4.6.3 for package: gcc-c++-4.6.3-3.10.amzn1.noarch
+--> Processing Dependency: libstdc++46-devel = 4.6.3 for package: gcc-c++-4.6.3-3.10.amzn1.noarch
+---> Package libffi-devel.x86_64 0:3.0.5-3.2.2.amzn1 will be installed
+---> Package libtool.x86_64 0:2.2.10-4.6.3.14.amzn1 will be installed
+---> Package libyaml-devel.x86_64 0:0.1.4-1.3.amzn1 will be installed
+---> Package openssl-devel.x86_64 1:1.0.1e-4.53.amzn1 will be installed
+--> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.1e-4.53.amzn1.x86_64
+---> Package patch.x86_64 0:2.6-6.6.amzn1 will be installed
+--> Running transaction check
+---> Package gcc46-c++.x86_64 0:4.6.3-2.67.amzn1 will be installed
+---> Package krb5-devel.x86_64 0:1.10.3-10.26.amzn1 will be installed
+--> Processing Dependency: libcom_err-devel for package: krb5-devel-1.10.3-10.26.amzn1.x86_64
+--> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.10.3-10.26.amzn1.x86_64
+--> Processing Dependency: libselinux-devel for package: krb5-devel-1.10.3-10.26.amzn1.x86_64
+---> Package libstdc++46.x86_64 0:4.6.3-2.67.amzn1 will be installed
+---> Package libstdc++46-devel.x86_64 0:4.6.3-2.67.amzn1 will be installed
+---> Package m4.x86_64 0:1.4.13-5.8.amzn1 will be installed
+--> Running transaction check
+---> Package keyutils-libs-devel.x86_64 0:1.4-4.10.amzn1 will be installed
+---> Package libcom_err-devel.x86_64 0:1.42.3-3.17.amzn1 will be installed
+---> Package libselinux-devel.x86_64 0:2.1.10-3.17.amzn1 will be installed
+--> Processing Dependency: libsepol-devel >= 2.1.5-1 for package: libselinux-devel-2.1.10-3.17.amzn1.x86_64
+--> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.1.10-3.17.amzn1.x86_64
+--> Running transaction check
+---> Package libsepol-devel.x86_64 0:2.1.7-3.12.amzn1 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package               Arch     Version                    Repository      Size
+================================================================================
+Installing:
+ autoconf              noarch   2.63-5.1.7.amzn1           amzn-main      932 k
+ automake              noarch   1.11.1-4.12.amzn1          amzn-main      579 k
+ bison                 x86_64   2.4.1-5.7.amzn1            amzn-main      707 k
+ gcc-c++               noarch   4.6.3-3.10.amzn1           amzn-main      2.9 k
+ libffi-devel          x86_64   3.0.5-3.2.2.amzn1          amzn-main       17 k
+ libtool               x86_64   2.2.10-4.6.3.14.amzn1      amzn-main      671 k
+ libyaml-devel         x86_64   0.1.4-1.3.amzn1            amzn-main      118 k
+ openssl-devel         x86_64   1:1.0.1e-4.53.amzn1        amzn-updates   1.2 M
+ patch                 x86_64   2.6-6.6.amzn1              amzn-main       91 k
+Installing for dependencies:
+ gcc46-c++             x86_64   4.6.3-2.67.amzn1           amzn-main      5.9 M
+ keyutils-libs-devel   x86_64   1.4-4.10.amzn1             amzn-main       28 k
+ krb5-devel            x86_64   1.10.3-10.26.amzn1         amzn-updates   562 k
+ libcom_err-devel      x86_64   1.42.3-3.17.amzn1          amzn-main       29 k
+ libselinux-devel      x86_64   2.1.10-3.17.amzn1          amzn-main      156 k
+ libsepol-devel        x86_64   2.1.7-3.12.amzn1           amzn-main       70 k
+ libstdc++46           x86_64   4.6.3-2.67.amzn1           amzn-main      354 k
+ libstdc++46-devel     x86_64   4.6.3-2.67.amzn1           amzn-main      1.5 M
+ m4                    x86_64   1.4.13-5.8.amzn1           amzn-main      286 k
+
+Transaction Summary
+================================================================================
+Install      18 Package(s)
+
+Total download size: 13 M
+Installed size: 35 M
+Downloading Packages:
+--------------------------------------------------------------------------------
+Total                                           9.2 MB/s |  13 MB     00:01     
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : libstdc++46-4.6.3-2.67.amzn1.x86_64                         1/18 
+  Installing : libstdc++46-devel-4.6.3-2.67.amzn1.x86_64                   2/18 
+  Installing : m4-1.4.13-5.8.amzn1.x86_64                                  3/18 
+  Installing : autoconf-2.63-5.1.7.amzn1.noarch                            4/18 
+  Installing : automake-1.11.1-4.12.amzn1.noarch                           5/18 
+  Installing : gcc46-c++-4.6.3-2.67.amzn1.x86_64                           6/18 
+  Installing : keyutils-libs-devel-1.4-4.10.amzn1.x86_64                   7/18 
+  Installing : libsepol-devel-2.1.7-3.12.amzn1.x86_64                      8/18 
+  Installing : libselinux-devel-2.1.10-3.17.amzn1.x86_64                   9/18 
+  Installing : libcom_err-devel-1.42.3-3.17.amzn1.x86_64                  10/18 
+  Installing : krb5-devel-1.10.3-10.26.amzn1.x86_64                       11/18 
+  Installing : 1:openssl-devel-1.0.1e-4.53.amzn1.x86_64                   12/18 
+  Installing : gcc-c++-4.6.3-3.10.amzn1.noarch                            13/18 
+  Installing : libtool-2.2.10-4.6.3.14.amzn1.x86_64                       14/18 
+  Installing : bison-2.4.1-5.7.amzn1.x86_64                               15/18 
+  Installing : libffi-devel-3.0.5-3.2.2.amzn1.x86_64                      16/18 
+  Installing : libyaml-devel-0.1.4-1.3.amzn1.x86_64                       17/18 
+  Installing : patch-2.6-6.6.amzn1.x86_64                                 18/18 
+  Verifying  : patch-2.6-6.6.amzn1.x86_64                                  1/18 
+  Verifying  : m4-1.4.13-5.8.amzn1.x86_64                                  2/18 
+  Verifying  : libstdc++46-4.6.3-2.67.amzn1.x86_64                         3/18 
+  Verifying  : gcc-c++-4.6.3-3.10.amzn1.noarch                             4/18 
+  Verifying  : libyaml-devel-0.1.4-1.3.amzn1.x86_64                        5/18 
+  Verifying  : libstdc++46-devel-4.6.3-2.67.amzn1.x86_64                   6/18 
+  Verifying  : libselinux-devel-2.1.10-3.17.amzn1.x86_64                   7/18 
+  Verifying  : libffi-devel-3.0.5-3.2.2.amzn1.x86_64                       8/18 
+  Verifying  : 1:openssl-devel-1.0.1e-4.53.amzn1.x86_64                    9/18 
+  Verifying  : libcom_err-devel-1.42.3-3.17.amzn1.x86_64                  10/18 
+  Verifying  : autoconf-2.63-5.1.7.amzn1.noarch                           11/18 
+  Verifying  : libtool-2.2.10-4.6.3.14.amzn1.x86_64                       12/18 
+  Verifying  : bison-2.4.1-5.7.amzn1.x86_64                               13/18 
+  Verifying  : libsepol-devel-2.1.7-3.12.amzn1.x86_64                     14/18 
+  Verifying  : automake-1.11.1-4.12.amzn1.noarch                          15/18 
+  Verifying  : gcc46-c++-4.6.3-2.67.amzn1.x86_64                          16/18 
+  Verifying  : keyutils-libs-devel-1.4-4.10.amzn1.x86_64                  17/18 
+  Verifying  : krb5-devel-1.10.3-10.26.amzn1.x86_64                       18/18 
+
+Installed:
+  autoconf.noarch 0:2.63-5.1.7.amzn1                                            
+  automake.noarch 0:1.11.1-4.12.amzn1                                           
+  bison.x86_64 0:2.4.1-5.7.amzn1                                                
+  gcc-c++.noarch 0:4.6.3-3.10.amzn1                                             
+  libffi-devel.x86_64 0:3.0.5-3.2.2.amzn1                                       
+  libtool.x86_64 0:2.2.10-4.6.3.14.amzn1                                        
+  libyaml-devel.x86_64 0:0.1.4-1.3.amzn1                                        
+  openssl-devel.x86_64 1:1.0.1e-4.53.amzn1                                      
+  patch.x86_64 0:2.6-6.6.amzn1                                                  
+
+Dependency Installed:
+  gcc46-c++.x86_64 0:4.6.3-2.67.amzn1                                           
+  keyutils-libs-devel.x86_64 0:1.4-4.10.amzn1                                   
+  krb5-devel.x86_64 0:1.10.3-10.26.amzn1                                        
+  libcom_err-devel.x86_64 0:1.42.3-3.17.amzn1                                   
+  libselinux-devel.x86_64 0:2.1.10-3.17.amzn1                                   
+  libsepol-devel.x86_64 0:2.1.7-3.12.amzn1                                      
+  libstdc++46.x86_64 0:4.6.3-2.67.amzn1                                         
+  libstdc++46-devel.x86_64 0:4.6.3-2.67.amzn1                                   
+  m4.x86_64 0:1.4.13-5.8.amzn1                                                  
+
+Complete!
