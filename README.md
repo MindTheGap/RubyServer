@@ -19,7 +19,7 @@ Things you may want to cover:
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* NEW chen
+* NEW chen 2
 
 * Deployment instructions
 
